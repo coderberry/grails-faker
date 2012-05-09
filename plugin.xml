@@ -1,9 +1,10 @@
-<plugin name='faker' version='0.1' grailsVersion='2.0 &gt; *'>
-  <author>Your name</author>
+<plugin name='faker' version='0.5' grailsVersion='2.0 &gt; *'>
+  <author>Eric Berry</author>
+  <authorEmail>cavneb@gmail.com</authorEmail>
   <title>Faker Plugin</title>
   <description>Brief summary/description of the plugin.
 </description>
-  <documentation>http://grails.org/plugin/faker</documentation>
+  <documentation>http://github.com/cavneb/grails-faker</documentation>
   <type>FakerGrailsPlugin</type>
   <resources>
     <resource>com.coderberry.faker.FakerExampleController</resource>
