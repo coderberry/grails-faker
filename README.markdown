@@ -75,6 +75,6 @@ Comments are welcome. Send an email to cavneb at gmail.com.
 
 ### Version History
 
-* 0.6 - Updated to use version 1.3.7+. Spanish added by [Pablo Alba](http://albaontech.wordpress.com/)
+* 0.6 - Spanish added by [Pablo Alba](http://albaontech.wordpress.com/)
 * 0.2 - Fixed bug with domain names including commas and apostrophes. Thanks to Mike Hugo for the fix code.
 * 0.1 - Initial Release
