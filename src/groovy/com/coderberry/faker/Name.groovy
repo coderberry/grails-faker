@@ -38,5 +38,32 @@ class Name extends Faker {
         def vals = ['Jr.', 'Sr.', 'I', 'II', 'III', 'IV', 'V', 'MD', 'DDS', 'PhD', 'DVM']
         return vals[generator.nextInt(vals.size())]
     }
+    
+    
+    //Spanish
+    
+    static String esFirstNameMale() {
+        def vals = ["Jose", "Antonio", "Juan", "Manuel", "Francisco", "Luis", "Javier", "Miguel", "Angel", "Carlos", "Jesus", "David", "Pedro", "Daniel", "Maria", "Rafael", "Fernando", "Alberto", "Alejandro", "Ramon", "Pablo", "Jorge", "Vicente", "Enrique", "Sergio", "Andres", "Ignacio", "Victor", "Diego", "Joaquin", "Eduardo", "Raul", "Adrian", "Oscar", "Alvaro", "Ivan", "Santiago", "Ruben", "Alfonso", "Roberto", "Emilio", "Ricardo", "Jaime", "Julio", "Gabriel", "Salvador", "Mario", "Julian", "Tomas", "Marcos", "Agustin", "Felix", "Guillermo", "Josep", "Jordi", "Cesar", "Joan", "Domingo", "Cristian", "Gonzalo", "Felipe", "Mohamed", "Alfredo", "Martin", "Sebastian", "Mariano", "Nicolas", "Marc", "Ismael", "Hugo", "Samuel", "Gregorio", "Hector", "Esteban", "Lorenzo", "Xavier", "Eugenio", "Aitor", "Arturo", "Cristobal", "Rodrigo", "Albert", "Valentin", "Adolfo", "Borja", "German", "Alex", "John", "Benito", "Jonathan", "Ernesto", "Alexander", "Marco", "Christian", "Lucas", "Iker", "Gustavo", "Gerardo", "Carmelo", "Isidro"]
+        return vals[generator.nextInt(vals.size())]
+    }
+    
+    static String esFirstNameFemale() {
+        def vals = ["Maria", "Carmen", "Ana", "Isabel", "Dolores", "Pilar", "Josefa", "Teresa", "Rosa", "Antonia", "Angeles", "Cristina", "Francisca", "Laura", "Elena", "Luisa", "Mercedes", "Concepcion", "Rosario", "Marta", "Jose", "Lucia", "Juana", "Manuela", "Raquel", "Jesus", "Sara", "Beatriz", "Paula", "Patricia", "Eva", "Encarnacion", "Victoria", "Rocio", "Belen", "Julia", "Esther", "Silvia", "Montserrat", "Andrea", "Nuria", "Angela", "Margarita", "Inmaculada", "Monica", "Yolanda", "Sandra", "Sonia", "Irene", "Alicia", "Susana", "Mar", "Marina", "Alba", "Amparo", "Nieves", "Natalia", "Gloria", "Soledad", "Lourdes", "Veronica", "Ines", "Consuelo", "Carolina", "Luz", "Asuncion", "Begoña", "Claudia", "Noelia", "Lorena", "Catalina", "Milagros", "Esperanza", "Emilia", "Olga", "Aurora", "Magdalena", "Lidia", "Alejandra", "Fatima", "Blanca", "Miriam", "Sofia", "Clara", "Josefina", "Eugenia", "Elisa", "Anna", "Purificacion", "Celia", "Nerea", "Carla", "Virginia", "Remedios", "Trinidad", "Vicenta", "Vanesa", "Gema", "Elvira", "Matilde"]
+        return vals[generator.nextInt(vals.size())]
+    }
+       
+    
+    static String esFirstName() {
+        generator.nextInt(2)?esFirstNameMale():esFirstNameFemale()
+    }
+    
+    static String esLastName() {
+        def vals = ["Flores", "Campos", "Vega", "Diez", "Fuentes", "Carrasco", "Caballero", "Nieto", "Aguilar", "Pascual", "Reyes", "Herrero", "Santana", "Lorenzo", "Hidalgo", "Montero", "Ibañez", "Gimenez", "Ferrer", "Duran", "Vicente", "Benitez", "Mora", "Arias", "Santiago", "Vargas", "Carmona", "Crespo", "Pastor", "Roman", "Soto", "Saez", "Velasco", "Soler", "Moya", "Esteban", "Parra", "Bravo", "Gallardo", "Rojas"]
+        return vals[generator.nextInt(vals.size())]
+    }
+    
+    static String esName(){		
+		return esFirstName() + ' ' + esLastName() + ' ' + esLastName()
+	}
 
 }

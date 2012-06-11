@@ -33,5 +33,24 @@ class Lorem extends Faker {
         }
         return paragraphs
     }
+    
+    
+    /**
+	 * 	Returns a random word
+	 */
+	static String word(){
+        def vals = WORDS.toString().split(' ')
+		return vals[generator.nextInt(vals.size())]
+	}
+
+	/**
+	 * 	Returns a random capital word
+	 */
+	static String wordCapital(){
+		 def vals = WORDS.toString().split(' ')
+		return vals[generator.nextInt(vals.size())].capitalize()
+	}
+    
+    
 
 }
