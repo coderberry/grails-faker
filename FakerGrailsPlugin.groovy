@@ -1,8 +1,8 @@
 class FakerGrailsPlugin {
     // the plugin version
-    def version = "0.5"
+    def version = "0.6"
     // the version or versions of Grails the plugin is designed for
-    def grailsVersion = "2.0 > *"
+    def grailsVersion = " 1.3.7 > *"
     // the other plugins this plugin depends on
     def dependsOn = [:]
     // resources that are excluded from plugin packaging
@@ -14,7 +14,7 @@ class FakerGrailsPlugin {
     def author = "Eric Berry"
     def authorEmail = "cavneb@gmail.com"
     def description = '''\
-Brief summary/description of the plugin.
+Faker, a port of Data::Faker from Perl, is used to easily generate fake data: names, addresses, phone numbers, etc.
 '''
 
     // URL to the plugin's documentation
@@ -29,7 +29,7 @@ Brief summary/description of the plugin.
 //    def organization = [ name: "My Company", url: "http://www.my-company.com/" ]
 
     // Any additional developers beyond the author specified above.
-//    def developers = [ [ name: "Joe Bloggs", email: "joe@bloggs.net" ]]
+    def developers = [ [ name: "Pablo Alba", email: "pablo.alba@kaleidos.net" ]]
 
     // Location of the plugin's issue tracker.
 //    def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPMYPLUGIN" ]
