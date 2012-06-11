@@ -33,6 +33,28 @@ class FakerService {
     def String lastName() {
         return Name.lastName()
     }
+    
+    def String esFirstNameMale() {
+        return Name.esFirstNameMale()
+    }
+    
+    def String esFirstNameFemale() {
+        return Name.esFirstNameFemale()
+    }
+    
+    def String esFirstName() {
+        return Name.esFirstName()
+    }
+    
+    def String esLastName() {
+        return Name.esLastName()
+    }
+    
+    def String esName() {
+        return Name.esName()
+    }
+    
+    
 
     /* -- ADDRESS -- */
 
@@ -75,6 +97,16 @@ class FakerService {
     def String ukPostcode() {
         return Address.ukPostcode()
     }
+    
+    def String esPostcode() {
+        return Address.esPostcode()
+    }
+    
+    def String esProvince() {
+        return Address.esProvince()
+    }
+    
+    
 
     /* -- COMPANY -- */
 
@@ -121,12 +153,57 @@ class FakerService {
     def String paragraph(int sentenceCount) {
         return Lorem.paragraph(sentenceCount)
     }
+    
+    def String word() {
+        return Lorem.word()
+    }
+    
+    def String wordCapital() {
+        return Lorem.wordCapital()
+    }
 
     /* -- PHONE NUMBER -- */
 
     def String phoneNumber(String format = null) {
         return PhoneNumber.phoneNumber(format)
     }
+    
+    def String esPhoneNumber() {
+        return PhoneNumber.esPhoneNumber()
+    }
+    
+    /* -- DATES -- */
+    /**
+	 * Returns a random date between today and today + one year.
+	 */
+    static Date futureDate() {
+		return Dates.futureDate()
+	}
+
+	/**
+	 * Returns a random date between today and today - one year.
+	 */
+	static Date pastDate() {
+		return Dates.pastDate()
+	}
+
+	/**
+	 * Returns a random date between today-20 years and today -100 years. Useful for birth dates.
+	 */
+	static Date veryPastDate() {
+        return Dates.veryPastDate()
+	}
+    
+    /* -- FISCAL -- */
+    
+    /**
+	 * Returns a random spanish Fiscal Identification Number (NIF)
+	 * @return
+	 */
+	static String esNIF(){
+		return Fiscal.esNIF()
+	}
+    
 
     /* -- VERSION -- */
 

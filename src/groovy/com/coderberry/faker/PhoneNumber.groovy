@@ -35,5 +35,12 @@ class PhoneNumber extends Faker {
         ]
         return vals
     }
+    
+    //Spanish
+    
+    static String esPhoneNumber(){
+        def vals = ['6########', "9########"]
+        return Faker.numerify(vals[generator.nextInt(vals.size())])
+    }
 
 }

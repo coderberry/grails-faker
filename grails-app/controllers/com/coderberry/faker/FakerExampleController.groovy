@@ -16,6 +16,11 @@ class FakerExampleController {
         exampleData["fakerService.name()"] = fakerService.name()
         exampleData["fakerService.firstName()"] = fakerService.firstName()
         exampleData["fakerService.lastName()"] = fakerService.lastName()
+        exampleData["fakerService.esFirstNameMale()"] = fakerService.esFirstNameMale()
+        exampleData["fakerService.esFirstNameFemale()"] = fakerService.esFirstNameFemale()
+        exampleData["fakerService.esFirstName()"] = fakerService.esFirstName()
+        exampleData["fakerService.esLastName()"] = fakerService.esLastName()
+        exampleData["fakerService.esName()"] = fakerService.esName()
 
 /* -- ADDRESS -- */
         exampleData["fakerService.streetAddress()"] = fakerService.streetAddress()
@@ -28,6 +33,9 @@ class FakerExampleController {
         exampleData["fakerService.ukCounty()"] = fakerService.ukCounty()
         exampleData["fakerService.ukCountry()"] = fakerService.ukCountry()
         exampleData["fakerService.ukPostcode()"] = fakerService.ukPostcode()
+        exampleData["fakerService.esPostcode()"] = fakerService.esPostcode()
+        exampleData["fakerService.esProvince()"] = fakerService.esProvince()
+        
 
 /* -- COMPANY -- */
         exampleData["fakerService.companyName()"] = fakerService.companyName()
@@ -47,10 +55,21 @@ class FakerExampleController {
 /* -- LOREM -- */
         exampleData["fakerService.sentence(3)"] = fakerService.sentence(3)
         exampleData["fakerService.paragraph(3)"] = fakerService.paragraph(3)
+        exampleData["fakerService.word()"] = fakerService.word()
+        exampleData["fakerService.wordCapital()"] = fakerService.wordCapital()
 
 /* -- PHONE -- */
         exampleData["fakerService.phoneNumber()"] = fakerService.phoneNumber()
         exampleData["fakerService.phoneNumber('##########')"] = fakerService.phoneNumber('##########')
+        exampleData["fakerService.esPhoneNumber()"] = fakerService.esPhoneNumber()
+        
+/* -- DATES -- */
+        exampleData["fakerService.futureDate()"] = fakerService.futureDate()
+        exampleData["fakerService.pastDate()"] = fakerService.pastDate()
+        exampleData["fakerService.veryPastDate()"] = fakerService.veryPastDate()
+        
+/* -- FISCAL -- */
+        exampleData["fakerService.esNIF()"] = fakerService.esNIF()
 
 /* -- VERSION -- */
         exampleData["fakerService.version()"] = fakerService.version()
