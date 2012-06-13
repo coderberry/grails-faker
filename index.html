@@ -52,6 +52,11 @@ println fakerService.bothify('##? ?##')        => 40h l06
 println fakerService.name()                    => Matilde Deckow
 println fakerService.firstName()               => Ernest
 println fakerService.lastName()                => Gutkowski
+println fakerService.esFirstNameMale()         => Gutkowski
+println fakerService.esFirstNameFemale()       => Gutkowski
+println fakerService.esFirstName()             => Gutkowski
+println fakerService.esLastName()              => Gutkowski
+println fakerService.esName()                  => Gutkowski
 
 /* -- ADDRESS -- */
 println fakerService.streetAddress()           => 237 Ludwig Station
@@ -64,6 +69,8 @@ println fakerService.zipCode()                 => 31685
 println fakerService.ukCounty()                => West Sussex
 println fakerService.ukCountry()               => Northern Ireland
 println fakerService.ukPostcode()              => JJ40 9EW
+println fakerService.esPostcode()              => JJ40 9EW
+println fakerService.esProvince()              => JJ40 9EW
 
 /* -- COMPANY -- */
 println fakerService.companyName()             => Eichmann-Marks
@@ -87,6 +94,15 @@ println fakerService.paragraph(3)              => Et sint aliquid cum quas tempo
 /* -- PHONE -- */
 println fakerService.phoneNumber()             => (535)286-9804 x571
 println fakerService.phoneNumber('##########') => 1698340636
+println fakerService.esPhoneNumber()           => 1698340636
+
+/* -- DATES -- */
+println fakerService.futureDate()              => (535)286-9804 x571
+println fakerService.pastDate() => 1698340636
+println fakerService.veryPastDate()            => 1698340636 // Useful for birth dates
+
+/* -- FISCAL - spanish Fiscal Identification Number (NIF) -- */
+println fakerService.esNIF()                   => (535)286-9804 x571 //
 
 /* -- VERSION -- */
 println fakerService.version()                 => 3.2.1</code></pre>
