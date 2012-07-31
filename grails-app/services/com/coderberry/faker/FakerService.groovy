@@ -174,35 +174,35 @@ class FakerService {
     
     /* -- DATES -- */
     /**
-	 * Returns a random date between today and today + one year.
-	 */
-    static Date futureDate() {
-		return Dates.futureDate()
-	}
+     * Returns a random date between today and today + one year.
+     */
+    def Date futureDate() {
+        return Dates.futureDate()
+    }
 
-	/**
-	 * Returns a random date between today and today - one year.
-	 */
-	static Date pastDate() {
-		return Dates.pastDate()
-	}
+    /**
+     * Returns a random date between today and today - one year.
+     */
+    def Date pastDate() {
+        return Dates.pastDate()
+    }
 
-	/**
-	 * Returns a random date between today-20 years and today -100 years. Useful for birth dates.
-	 */
-	static Date veryPastDate() {
+    /**
+     * Returns a random date between today-20 years and today -100 years. Useful for birth dates.
+     */
+    def Date veryPastDate() {
         return Dates.veryPastDate()
-	}
+    }
     
     /* -- FISCAL -- */
     
     /**
-	 * Returns a random spanish Fiscal Identification Number (NIF)
-	 * @return
-	 */
-	static String esNIF(){
-		return Fiscal.esNIF()
-	}
+     * Returns a random spanish Fiscal Identification Number (NIF)
+     * @return
+     */
+    def String esNIF(){
+        return Fiscal.esNIF()
+    }
     
 
     /* -- VERSION -- */
