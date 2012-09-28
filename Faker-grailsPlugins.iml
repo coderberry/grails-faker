@@ -16,9 +16,6 @@
     <content url="file://$USER_HOME$/.grails/2.0.3/projects/faker/plugins/rest-client-builder-1.0.2">
       <sourceFolder url="file://$USER_HOME$/.grails/2.0.3/projects/faker/plugins/rest-client-builder-1.0.2/src/groovy" isTestSource="false" />
     </content>
-    <content url="file://$USER_HOME$/.grails/2.0.3/projects/faker/plugins/svn-1.0.1">
-      <sourceFolder url="file://$USER_HOME$/.grails/2.0.3/projects/faker/plugins/svn-1.0.1/src/groovy" isTestSource="false" />
-    </content>
     <content url="file://$USER_HOME$/.grails/2.0.3/projects/faker/plugins/tomcat-2.0.3" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
